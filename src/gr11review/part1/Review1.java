@@ -3,7 +3,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
+/** 
+ * A program Review1.java, that asks the user to enter a month number and a day number to determine the day of the year, assuming it is not a leap year
+ * @ Patrick Liu
+ */
 public class Review1 {
     public static void main(String[] args) throws IOException{
         // Declaring variables
@@ -12,13 +15,12 @@ public class Review1 {
         int intTotal = 0; 
 
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader keyboard2 = new BufferedReader(new InputStreamReader(System.in));
 
         // Get input values
-        System.out.println("Input the month number:");
+        System.out.print("Enter the month number: ");
         intMonth = Integer.parseInt(keyboard.readLine()) ;
-        System.out.println("Input the day number:");
-        intDay = Integer.parseInt(keyboard2.readLine());
+        System.out.print("Enter the day number: ");
+        intDay = Integer.parseInt(keyboard.readLine());
 
         for(int i = intMonth - 1; i > 0; i--){
             if(i == 1 || i == 3 ||i == 5 || i == 7 || i == 8 || i == 10){
