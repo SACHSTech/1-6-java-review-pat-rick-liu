@@ -9,14 +9,16 @@ public class Review6{
         // Variables
         int intItemNumber = 1;  
         double dblSubtotal = 0; 
+        double dblCurrentItem = 1;
         DecimalFormat df = new DecimalFormat("#,###.00");
 
         // Asking user for number of items
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
-        while (Integer.parseInt(keyboard.readLine()) != 0){
+        while (dblCurrentItem != 0){
             System.out.println("Enter the price for item " + intItemNumber + ": ");
-            dblSubtotal += Double.parseDouble(keyboard.readLine());
+            dblCurrentItem = Double.parseDouble(keyboard.readLine());
+            dblSubtotal += dblCurrentItem;
             intItemNumber++;
         }
         // Billing information
