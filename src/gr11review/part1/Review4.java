@@ -6,7 +6,6 @@ import java.io.BufferedReader;
 
 public class Review4{
 
-    BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
     public static void main (String[] args) throws IOException{
         // Variables
         int intNumberOfItems; 

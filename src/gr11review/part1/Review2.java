@@ -19,7 +19,7 @@ public class Review2 {
         System.out.println("Choose a menu option:");
         intOption = Integer.parseInt(keyboard.readLine()) ;
        
-        
+            // Joke output depending on the number chosen
             if(intOption == 0){
                 System.out.println("Why do bees have sticky hair?");
                 System.out.println("They always use honeycombs.");
