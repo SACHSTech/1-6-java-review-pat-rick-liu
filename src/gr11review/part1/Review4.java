@@ -4,21 +4,25 @@ import java.io.InputStreamReader;
 import java.text.DecimalFormat; 
 import java.io.BufferedReader;
 
+/** 
+ * A program Review4.java, that asks for the costs of items from the user, then calculates the total cost with tax
+ * @Patrick-liu
+ */
 public class Review4{
 
     public static void main (String[] args) throws IOException{
         // Variables
         int intNumberOfItems; 
         double dblSubtotal = 0; 
-        DecimalFormat df = new DecimalFormat("#,###.00");
-
+        
+        DecimalFormat df = new DecimalFormat("#,##0.00");
         // Asking user for number of items
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("How many items would you like to buy? ");
+        System.out.print("How many items do you want to buy? ");
         intNumberOfItems = Integer.parseInt(keyboard.readLine());
 
         for (int i = 1; i < intNumberOfItems + 1; i++){
-            System.out.println("Enter the price for item " + i + ": ");
+            System.out.print("Enter the price for item " + i + ": ");
             dblSubtotal += Double.parseDouble(keyboard.readLine());
         }
         // Billing information

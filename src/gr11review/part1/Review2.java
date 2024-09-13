@@ -3,7 +3,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
+/** 
+ * A program Review2.java, that prints out a joke depending on what the user asks
+ * @Patrick-liu
+ */
 public class Review2 {
     public static void main(String[] args) throws IOException{
         // Declaring variables
@@ -16,7 +19,7 @@ public class Review2 {
         System.out.println("1 - print a joke about your feet");
         System.out.println("2 - print a joke about your clothes");
         System.out.println("3 - print a joke about your teacher");
-        System.out.println("Choose a menu option:");
+        System.out.print("Choose a menu option: ");
         intOption = Integer.parseInt(keyboard.readLine()) ;
        
             // Joke output depending on the number chosen
