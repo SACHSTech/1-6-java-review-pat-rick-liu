@@ -5,7 +5,11 @@ import java.io.InputStreamReader;
 
 /** 
  * A program Review2.java, that prints out a joke depending on what the user asks
- * @Patrick-liu
+ * 
+ * This program uses if statements to determine what the user input, then
+ * prints the corresponding joke for that specfic input
+ * 
+ * @author: Patrick-liu
  */
 public class Review2 {
     /**
@@ -15,9 +19,10 @@ public class Review2 {
      * @throws IOException If there is an error during input.
      */
     public static void main(String[] args) throws IOException{
-        // Declaring variables
+        // Declare and initialize variables
         int intOption; 
 
+        // Asking user for number of items
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
         // Get input values

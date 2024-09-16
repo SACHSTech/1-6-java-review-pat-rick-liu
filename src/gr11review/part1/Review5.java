@@ -8,9 +8,10 @@ import java.io.InputStreamReader;
  * the compound interest rate and the target amount, to tell the 
  * user how many years it would take to reach the target amount
  * 
- * This program uses
+ * This program uses a while loop, to continue the compounding
+ * until the target amount is reached
  * 
- * @Patrick-liu
+ * @author: Patrick-liu
  */
 
 public class Review5{
@@ -21,13 +22,15 @@ public class Review5{
      * @throws IOException If there is an error during input.
      */
     public static void main (String[] args) throws IOException{
-        //Declaring variables
+
+        // Declare and initialize variables
         double dblInvestedAmount = 0;
         double dblInterestRate = 0;
         double dblTargetAmount = 0; 
         double dblCurrent = 0; 
         int intNumberOfYears = 0;
 
+        // Asking user for number of items
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
         // Asks user for information
@@ -38,7 +41,7 @@ public class Review5{
         System.out.print("Enter the target amount: ");
         dblTargetAmount = Double.parseDouble(keyboard.readLine());
 
-        // Solves the number of years it would take to 
+        // Solves the number of years it would take to reach the target amount
         while(dblCurrent < dblTargetAmount){
             dblCurrent = (dblCurrent + dblInvestedAmount) * ((dblInterestRate / 100) + 1);
             intNumberOfYears++;

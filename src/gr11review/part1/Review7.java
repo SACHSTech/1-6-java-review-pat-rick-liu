@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
  * the total number of characters, the number of spaces, the number of a's and the number of dashes
  * to output
  * 
- * @Patrick-liu
+ * @author: Patrick-liu
  */
 public class Review7{
     /**
@@ -25,9 +25,11 @@ public class Review7{
         String theSentence;
         int intNumberOfSpaces = 0;
         int intNumberOfA = 0;
+
         // Set up keyboard input
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
+        // Adds space for the user to input a sentence
         System.out.print("");
         theSentence = (keyboard.readLine());
 
