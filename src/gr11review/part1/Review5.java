@@ -4,11 +4,22 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader; 
 
 /** 
- * A program Review5.java, that takes the amount added each year, the compound interest rate and the target amount, to tell the user how many years it would take to reach the target amount
+ * A program Review5.java, that takes the amount added each year, 
+ * the compound interest rate and the target amount, to tell the 
+ * user how many years it would take to reach the target amount
+ * 
+ * This program uses
+ * 
  * @Patrick-liu
  */
 
 public class Review5{
+    /**
+     * Main Method to execute the main program logic.
+     * 
+     * @param args Command-line arguments (not used).
+     * @throws IOException If there is an error during input.
+     */
     public static void main (String[] args) throws IOException{
         //Declaring variables
         double dblInvestedAmount = 0;

@@ -9,7 +9,12 @@ import java.io.BufferedReader;
  * @Patrick-liu
  */
 public class Review4{
-
+    /**
+     * Main Method to execute the main program logic.
+     * 
+     * @param args Command-line arguments (not used).
+     * @throws IOException If there is an error during input.
+     */
     public static void main (String[] args) throws IOException{
         // Variables
         int intNumberOfItems; 
