@@ -8,6 +8,12 @@ import java.io.InputStreamReader;
  * @ Patrick Liu
  */
 public class Review1 {
+    /**
+     * Main Method to execute the main program logic.
+     * 
+     * @param args Command-line arguments (not used).
+     * @throws IOException If there is an error during input.
+     */
     public static void main(String[] args) throws IOException{
         // Declaring variables
         int intMonth;

@@ -5,10 +5,21 @@ import java.text.DecimalFormat;
 import java.io.InputStreamReader; 
 
 /** 
- * A program Review6.java, that asks for the costs of items from the user, then calculates the total cost with tax
+ * A program Review6.java, that asks for the costs of items from the user, 
+ * then calculates the total cost with tax.
+ * 
+ * This program uses a while loop to continue asking the user for the price
+ * of the item until they input 0 as the price.
+ * 
  * @Patrick-liu
  */
 public class Review6{
+    /**
+     * Main Method to execute the main program logic.
+     * 
+     * @param args Command-line arguments (not used).
+     * @throws IOException If there is an error during input.
+     */
     public static void main (String[] args) throws IOException{
         // Variables 
         double dblSubtotal = 0; 
