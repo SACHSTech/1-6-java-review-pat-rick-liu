@@ -8,7 +8,7 @@ import java.util.Random;
  * This program uses a for loop to repeat the process 1000 times,
  * then prints the number of triples at the end.
  * 
- * @Patrick-liu
+ * @author: Patrick-liu
  */
 public class Review8{
 
@@ -19,6 +19,7 @@ public class Review8{
      * @throws IOException If there is an error during input.
      */
     public static void main(String[] args) throws IOException{
+        // Declare and initialize variables
         Random randomSlotNumber = new Random();
         int intFirst;
         int intSecond;

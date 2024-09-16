@@ -5,8 +5,13 @@ import java.text.DecimalFormat;
 import java.io.BufferedReader;
 
 /** 
- * A program Review4.java, that asks for the costs of items from the user, then calculates the total cost with tax
- * @Patrick-liu
+ * A program Review4.java, that asks for the costs of items 
+ * from the user, then calculates the total cost with tax
+ * 
+ * This program uses a for loop to ask the user for the price
+ * of the item many times
+ * 
+ * @author: Patrick-liu
  */
 public class Review4{
     /**
@@ -16,13 +21,17 @@ public class Review4{
      * @throws IOException If there is an error during input.
      */
     public static void main (String[] args) throws IOException{
-        // Variables
+        // Declare and initialize variables
         int intNumberOfItems; 
         double dblSubtotal = 0; 
-        
-        DecimalFormat df = new DecimalFormat("#,##0.00");
+
+        // Set up the decimal format
+        DecimalFormat numberFormat = new DecimalFormat("#,##0.00");
+
         // Asking user for number of items
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+
+        // Asking user for number of items
         System.out.print("How many items do you want to buy? ");
         intNumberOfItems = Integer.parseInt(keyboard.readLine());
 
@@ -31,9 +40,9 @@ public class Review4{
             dblSubtotal += Double.parseDouble(keyboard.readLine());
         }
         // Billing information
-        System.out.println("Subtotal: $" + df.format(dblSubtotal));
-        System.out.println("Tax: $" + df.format(dblSubtotal * 0.13));
-        System.out.println("Total: $" + df.format(dblSubtotal * 1.13));
+        System.out.println("Subtotal: $" + numberFormat.format(dblSubtotal));
+        System.out.println("Tax: $" + numberFormat.format(dblSubtotal * 0.13));
+        System.out.println("Total: $" + numberFormat.format(dblSubtotal * 1.13));
 
     }
 }

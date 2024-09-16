@@ -2,8 +2,13 @@ package gr11review.part1;
 import java.io.IOException;
 
 /** 
- * A program Review3.java, that prints the odd numbers from 21 to 100 and the prints the numbers from 29 to 2
- * @ Patrick Liu
+ * A program Review3.java, that prints the odd numbers 
+ * from 21 to 100 and the prints the numbers from 29 to 2
+ * 
+ * This program uses a for loop to print all of the odd numbers
+ * from 21 to 100 in increasing order, then 29 to 2 in decreasing order
+ * 
+ * @author: Patrick Liu
  */
 public class Review3 {
    /**
